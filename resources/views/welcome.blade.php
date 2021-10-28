@@ -20,6 +20,15 @@
             }
         </style>
     </head>
+    <html>
+        <form class="card-body my-card-body" action="{{ route('store') }}" method="POST">
+            <div>
+                <input type="text" class="form-control w-50 mb-3" name="new_tag" placeholder="新しいタグを入力" />
+                <button type="submit" class="btn btn-primary">保存</button>
+            </div>
+        </form>
+
+    </html>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
